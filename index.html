@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--Hi Felice! this code is a franquenstein code, I used stuff from our classes but also from W3schools and some videos, I added the references in the comments below-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Rodrigo Leon">
+    <meta name="description" content="Final project for the Web development class at Humber College">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- google fonts here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
+
+<!--bootstrap stuff-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
+
+<link href="styles/style.css" rel="stylesheet">
+
+<!--Small Logo-->
+<link rel="shortcut icon" href="Images/Logo small.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+    <!--Nav Menu
+    I got most of the stuff here from this site
+    https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+    -->
+
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#3d" class="nav-item nav-link">3D</a>
+                <a href="#illustration" class="nav-item nav-link">Illustration</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header-->
+
+    <div class="container-fluid d-flex align-items-center mb-3 py-5" id="home">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12 hero-text text-center text-lg-left">
+                    <img src="Images/Logo.png" alt="Rodrigo Leon logo" class="Main-Logo">
+                    <br>
+                    <h1 class="display-3 text-black mb- PortfolioTitle">PORTFOLIO</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<br><br><br>
+    <div class="about-img col-l"></div>
+
+    <!--About Me-->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="col-lg-12 text-center text-lg-left">
+                <h1 class="display-3 text-white mb- AMe">ABOUT ME</h1>
+                <br>
+               
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row align-items-center">
+                    <div class="col-lg-4 pb-4 pb-lg-0">
+                        <img class="img-fluid portrait" src="Images/Rodrigo_Leon_Portrait.png" alt="">
+
+                    </div>
+                    <div class="col-lg-7 AMText" >
+                        <h3 class="mb-4">Professional Motion Graphics Designer, 3D artist, and illustrator / PS compositor</h3>
+                        <p>I'm drawn to well thought out and polished pieces, I believe that mastery can be accomplished only by working hard at ones craft. At the same time I admire the simplicity, cleverness and elegance of good minimalism which is not easy to achieve.
+ 
+
+                            My inspiration comes from the joy of creating something that will make me feel proud of my work, I love challenging myself to create beautiful pieces.
+                             
+                            
+                            As a motion graphic designer, illustrator and 3D artist I aim to use my sense of aesthetic and experience to bring creative projects to life.</p>
+                    </div>
+               </div>
+            </div>
+
+<!--3D
+Followed this tutorial for the portfolio images part
+https://www.youtube.com/watch?v=yl0s76H0oMc
+-->
+
+<div class="container-fluid py-5" id="3d">
+    <div class="container">
+        <div class="col-lg-12 text-center text-lg-left">
+    <h1 class="display-3 text-white mb- mywork">3D WORK</h1>
+        </div>
+        
+
+        <div class="container">
+            <div class="col-12 text-center mb-2 video">
+                <!--Youtube 3D Video-->
+                    <h5>Here you will find a short video of my 3D work, hope you like it</h5>
+                    <iframe 
+                    max-width="560" 
+                    max-height="315" 
+                    src="https://www.youtube.com/embed/2yz2wUee3bo" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                    </iframe>
+                    <br><br>
+            </div>
+        </div>
+<!--I also got help from this site
+https://getbootstrap.com/docs/5.0/layout/columns/
+It wasn't working as I wanted it to :( turns out the key was the "first, second and third" parts of it for the columns)-->
+
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/1.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/1.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/2.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/2.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/3.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/3.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/4.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/4.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/5.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/5.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/6.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/6.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/7.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/7.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/8.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/8.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/9.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/9.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/10.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/10.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/11.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/11.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/12.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/12.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!--Illustration-->
+
+<div class="container-fluid py-5" id="illustration">
+    <div class="container">
+        <div class="col-lg-12 text-center text-lg-left">
+    <h1 class="display-3 text-white mb- mywork">PS COMPOSITING AND ILLUSTRATION</h1>
+        </div>
+
+        <div class="container">
+            <div class="col-12 text-center mb-2 video">
+                <!--Youtube Illustration Video-->
+                    <h5>Here you will find a short video of my 3D work, hope you like it</h5>
+                    <iframe
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/FicO0hjrjQQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                    </iframe>
+                    <br><br>
+            </div>
+        </div>
+
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/13.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/13.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/14.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/14.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/25.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/25.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/16.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/16.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/18.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/18.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid w-100" src="Images/Mosaics/19.jpg" alt="">
+                    <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                        <a href="Images/19.jpg" data-lightbox="portfolio">
+                            <i class="biggerview">+</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/20.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/20.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/21.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/21.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/22.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/22.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/23.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/23.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="Images/Mosaics/24.jpg" alt="">
+                        <div class="portfolio-btn bg-dark d-flex align-items-center justify-content-center">
+                            <a href="Images/24.jpg" data-lightbox="portfolio">
+                                <i class="biggerview">+</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+              
+     
+        </div>
+    </div>
+</div>
+
+
+<!--contact-->
+ <div class="container-fluid py-5" id="contact">
+    <div class="container">
+        <div class="col-lg-12 text-center text-lg-left">
+            <h1 class="display-3 text-white mb- mywork">CONTACT ME</h1>
+            <div class="row justify-content-center">
+            <div class="contact-form text-center"></div>
+            </div>
+
+            <div class="row justify-content-center">
+            <div class="col-lg-8">
+            <div class="form-row">
+                    <div class="control-group col-sm-4"></div>
+                    <input type="text" class="form-control p-2" id="name" placeholder="Your Name">
+                    <br>
+                    <input type="text" class="form-control p-2" id="email" placeholder="Your e-mail">
+                    <br>
+                    <input type="text" class="form-control py-5 px-2" id="message" rows="5" placeholder="Write your message">
+                    <br>
+                    <div>
+                        <button class="btn btn-outline-light" type="submit">Submit</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!--JS and other scripts below-->
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+<!-- How to make responsive videos was taken from this video 
+https://www.youtube.com/watch?v=v41_bI5uoNw
+-->
+    <script>
+        $(document).ready(function(){
+            $('.video').fitVids();
+        });
+    </script>
+</body>
+</html>
